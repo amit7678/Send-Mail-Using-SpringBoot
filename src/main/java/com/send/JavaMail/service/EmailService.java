@@ -19,7 +19,7 @@ public class EmailService implements EmailInterface {
         // Create a MimeMessage object, which is used to represent the email message
         MimeMessage message=javaMailSender.createMimeMessage();
         MimeMessageHelper helper=new MimeMessageHelper(message);
-        helper.setFrom("amitmaurya986@gmail.com",emailRequest.getTitle());
+        helper.setFrom("amitmaurya9@gmail.com",emailRequest.getTitle());
         String[] recipients = emailRequest.getRecipentEmail();  // assuming getRecipentEmails() returns an array of email addresses
         helper.setTo(recipients);
         helper.setCc(emailRequest.getCc());
@@ -44,7 +44,7 @@ public class EmailService implements EmailInterface {
         MimeMessageHelper helper=new MimeMessageHelper(message,true);
 
         // Set the sender's email and title
-        helper.setFrom("amitmaurya986@gmail.com",emailRequest.getTitle());
+        helper.setFrom("amitmaurya9@gmail.com",emailRequest.getTitle());
         // Get the recipient email addresses from the EmailRequest and set them
         String[] recipients = emailRequest.getRecipentEmail();  // assuming getRecipentEmails() returns an array of email addresses
         helper.setTo(recipients);
